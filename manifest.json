@@ -1,0 +1,13 @@
+{
+  "name": "LinkedIN Connect",
+  "version": "0.0.0.1",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts":[
+    {
+        "matches":["https://*.linkedin.com/*"],
+        "js":["linkedinmanp.js"]}
+  ],
+  "manifest_version": 3
+}
