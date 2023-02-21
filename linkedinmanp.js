@@ -1,7 +1,7 @@
 (() => {
     chrome.runtime.onMessage.addListener((obj, sender, response) => {
         if (obj.type == "connection") {
-            let connectbtn = document.querySelectorAll('button.artdeco-button.artdeco-button--2.artdeco-button--secondary.ember-view.search-primary-action__state-action-btn--omit-icon');
+            let connectbtn = document.querySelectorAll('button.artdeco-button');
             let button = [];
             connectbtn.forEach((elem) => {
                 if (!!elem.querySelector("li-icon[type='connect']")) button.push(elem);
